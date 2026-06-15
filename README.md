@@ -33,9 +33,3 @@ Flujo:
 - Contraseña: guest
 - Queue: pedidos
 
-## Ejecución
-
-Instalar dependencias:
-
-```bash
-py -m pip install -r requirements.txt
