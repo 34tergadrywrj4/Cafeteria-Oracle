@@ -903,7 +903,7 @@ RabbitMQ transporta el mensaje; Oracle conserva el estado real del pedido.
 ```text
 Cafeteria-Oracle/
 │
-├── DB/
+├── BD/
 │   └── cafeteria_local.sql
 │
 └── API/
