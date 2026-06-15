@@ -1,6 +1,8 @@
 # Cafeteria-Oracle
 Realizado por:
+
 -Ramirez Haro Diego Emiliano.
+
 -Caballero Del Valle Alvaro Alejandro.
 
 ## 1. Descripción general del proyecto
