@@ -901,7 +901,7 @@ RabbitMQ transporta el mensaje; Oracle conserva el estado real del pedido.
 ## 25. Estructura del proyecto
 
 ```text
-cafeteria-rabbitmq-oracle/
+Cafeteria-Oracle/
 │
 ├── DB/
 │   └── cafeteria_local.sql
