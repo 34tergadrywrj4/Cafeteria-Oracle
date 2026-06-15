@@ -903,21 +903,15 @@ RabbitMQ transporta el mensaje; Oracle conserva el estado real del pedido.
 ```text
 cafeteria-rabbitmq-oracle/
 │
-├── database/
+├── DB/
 │   └── cafeteria_local.sql
 │
-├── api/
-│   ├── producer_pedido.py
-│   ├── consumer_cocina.py
-│   ├── test_oracle.py
-│   └── test_rabbit.py
-│
-├── docs/
-│   └── capturas/
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+└── API/
+    ├── producer_pedido.py
+    ├── consumer_cocina.py
+    ├── test_oracle.py
+    └── test_rabbit.py
+
 ```
 
 ---
