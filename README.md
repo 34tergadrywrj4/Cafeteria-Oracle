@@ -908,9 +908,7 @@ Cafeteria-Oracle/
 │
 └── API/
     ├── producer_pedido.py
-    ├── consumer_cocina.py
-    ├── test_oracle.py
-    └── test_rabbit.py
+    └── consumer_cocina.py
 
 ```
 
@@ -1005,7 +1003,7 @@ Contraseña: guest
 Primero se ejecuta el consumidor de cocina:
 
 ```cmd
-py api/consumer_cocina.py
+py API/consumer_cocina.py
 ```
 
 Este script queda escuchando la cola `pedidos`.
@@ -1017,7 +1015,7 @@ Este script queda escuchando la cola `pedidos`.
 Después, en otra terminal, se ejecuta el productor:
 
 ```cmd
-py api/producer_pedido.py
+py API/producer_pedido.py
 ```
 
 Este script crea un pedido en Oracle y envía el mensaje a RabbitMQ.
