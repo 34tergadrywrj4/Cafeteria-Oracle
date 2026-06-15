@@ -86,14 +86,14 @@ La primera parte del proyecto consistió en diseñar la base de datos en Oracle 
 
 La base de datos permite administrar la información de una cafetería escolar mediante las siguientes entidades:
 
-| Entidad            | Descripción                                                    |
-| ------------------ | -------------------------------------------------------------- |
-| `CATEGORIA`        | Clasifica los productos de la cafetería.                       |
-| `PRODUCTO`         | Almacena los productos disponibles para la venta.              |
-| `ALUMNO`           | Registra los alumnos que realizan pedidos.                     |
-| `EMPLEADO`         | Registra los empleados que atienden los pedidos.               |
-| `PEDIDO`           | Guarda la información general de cada pedido.                  |
-| `DETALLE_PEDIDO`   | Guarda los productos incluidos en cada pedido.                 |
+| Entidad | Descripción |
+|---|---|
+| `CATEGORIA` | Clasifica los productos de la cafetería. |
+| `PRODUCTO` | Almacena los productos disponibles para la venta. |
+| `ALUMNO` | Registra los alumnos que realizan pedidos. |
+| `EMPLEADO` | Registra los empleados que atienden los pedidos. |
+| `PEDIDO` | Guarda la información general de cada pedido. |
+| `DETALLE_PEDIDO` | Guarda los productos incluidos en cada pedido. |
 | `HISTORIAL_PEDIDO` | Tabla considerada para registrar cambios de estado del pedido. |
 
 ---
@@ -108,7 +108,6 @@ Para el frontend se prevé el uso de HTML y CSS, con la finalidad de contar con 
 flowchart LR
     A[Frontend: HTML y CSS] --> B[API / Backend en Python]
     B --> C[(Oracle Database XE 21c)]
-
     C --> D[Tabla ALUMNO]
     C --> E[Tabla EMPLEADO]
     C --> F[Tabla CATEGORIA]
