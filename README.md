@@ -57,20 +57,19 @@ Desarrollar un prototipo de sistema de pedidos para una cafetería escolar, util
 
 ---
 
-## 5. Tecnologías utilizadas
+## 5. Herramientas generales del proyecto
 
-| Tecnología             | Uso dentro del proyecto                           |
-| ---------------------- | ------------------------------------------------- |
-| Oracle Database XE 21c | Base de datos relacional                          |
-| SQL Developer          | Administración y consultas de la base de datos    |
-| HTML                   | Estructura prevista para la interfaz web          |
-| CSS                    | Diseño visual previsto para la interfaz web       |
-| Python 3.13            | API/backend e integración entre Oracle y RabbitMQ |
-| RabbitMQ 4.1.8         | Broker de mensajería                              |
-| Erlang OTP 27.3.4.13   | Requisito para ejecutar RabbitMQ                  |
-| pika                   | Librería de Python para conectar con RabbitMQ     |
-| oracledb               | Librería de Python para conectar con Oracle       |
-| GitHub                 | Repositorio del proyecto                          |
+Para el desarrollo del proyecto se utilizaron herramientas orientadas al manejo de bases de datos, programación e integración de servicios.
+
+La base principal del sistema se trabajó con una base de datos relacional, mientras que la comunicación entre módulos se realizó mediante una cola de mensajes. Además, se utilizó Python como intermediario para conectar la base de datos con el sistema de mensajería.
+
+De forma general, el proyecto considera:
+
+* Una base de datos relacional para almacenar la información del sistema.
+* Un backend o API encargado de procesar las operaciones.
+* Una interfaz web prevista para la interacción con el usuario.
+* Un sistema de mensajería para comunicar el módulo de pedidos con cocina.
+* Un repositorio en GitHub para organizar y documentar el proyecto.
 
 ---
 
