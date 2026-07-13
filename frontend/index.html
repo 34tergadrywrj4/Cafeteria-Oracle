@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafetería Escolar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="brand">
+        <span class="logo">☕</span>
+        <div>
+          <h1>Cafetería Escolar</h1>
+          <p>Connected to Orcale server</p>
+        </div>
+      </div>
+      <div class="status" id="apiStatus">API: verificando...</div>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <h2>Registro de pedidos</h2>
+        <p>Selecciona alumno, empleado y productos. Al generar el pedido, la API lo guarda en Oracle y manda el mensaje a RabbitMQ.</p>
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="panel order-panel">
+      <div class="section-head">
+        <div><h2>Nuevo pedido</h2><p>Datos principales del pedido</p></div>
+        <button class="ghost" id="btnReload">Actualizar datos</button>
+      </div>
+      <div class="form-grid">
+        <label>Alumno<select id="alumnoSelect"></select></label>
+        <label>Empleado<select id="empleadoSelect"></select></label>
+      </div>
+      <div class="section-head mini"><div><h3>Productos</h3><p>Catálogo cargado desde Oracle</p></div></div>
+      <div id="productosGrid" class="productos-grid"><div class="loading">Cargando productos...</div></div>
+    </section>
+
+    <aside class="panel cart-panel">
+      <h2>Detalle del pedido</h2>
+      <div id="carrito" class="empty-box">No hay productos agregados.</div>
+      <div class="total-row"><span>Total</span><strong id="totalPedido">$0.00</strong></div>
+      <button class="btn primary" id="btnCrearPedido">Generar pedido</button>
+      <button class="btn secondary" id="btnLimpiar">Limpiar</button>
+    </aside>
+
+    <section class="panel orders-panel">
+      <div class="section-head">
+        <div><h2>Pedidos recientes</h2><p>Se actualiza desde Oracle. Si el consumer está activo, el estado cambia.</p></div>
+        <button class="ghost" id="btnPedidos">Actualizar pedidos</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID</th><th>Alumno</th><th>Empleado</th><th>Total</th><th>Estado</th><th>Productos</th></tr></thead>
+          <tbody id="pedidosBody"><tr><td colspan="6" class="empty-cell">Sin pedidos cargados.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>
